@@ -1,6 +1,6 @@
-# Java and Angular Lecture Notes
+# Java, Angular, and AWS Lecture Notes
 
-Welcome to the Java and Angular Lecture Notes repository! This repository contains a collection of markdown files that serve as lecture notes for Java and Angular programming.
+Welcome to the Java Angular, and AWS Lecture Notes repository! This repository contains a collection of markdown files that serve as lecture notes for Java, Angular and AWS programming.
 
 ## Java
 
@@ -27,14 +27,27 @@ The Angular lecture notes provide comprehensive explanations and examples for bu
 
 To access the Angular lecture notes, head over to the [Angular Lecture Notes](angular/) directory.
 
+## AWS
+
+The AWS lecture notes offer insights into cloud computing using Amazon Web Services (AWS). These notes cover various AWS services and concepts, such as:
+
+- EC2 (Elastic Compute Cloud)
+- S3 (Simple Storage Service)
+- RDS (Relational Database Service)
+- Lambda functions
+- CloudFormation
+- IAM (Identity and Access Management)
+
+To explore the AWS lecture notes, visit the [AWS Lecture Notes](aws/) directory.
+
 ## Getting Started
 
 To get started with the lecture notes, follow these steps:
 
 1. Clone the repository to your local machine using the following command:
-git clone https://github.com/your-username/note-repo.git
+   `git clone https://github.com/your-username/note-repo.git`
 
-2. Explore the `java/` and `angular/` directories to find the relevant lecture notes you're interested in.
+2. Explore the `java/`, `angular/`, and `aws/` directories to find the relevant lecture notes you're interested in.
 
 3. Each markdown file contains detailed explanations, code snippets, and examples to enhance your understanding of the topics covered.
 
@@ -47,16 +60,8 @@ To contribute to this repository, follow these steps:
 1. Fork the repository to your GitHub account.
 
 2. Create a new branch for your changes:
-git checkout -b your-branch-name
+   `git checkout -b your-branch-name`
 
 3. Make the necessary updates, additions, or fixes.
 
 4. Commit your changes and push the branch to your forked repository:
-git commit -m "Your detailed description of the changes"
-git push origin your-branch-name
-
-5. Open a pull request with a detailed description of your changes.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE). You are free to use, modify, and distribute the content in this repository as per the terms of the license.
