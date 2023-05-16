@@ -27,8 +27,17 @@ DBeaver is a powerful and free universal database tool. Download and install DBe
 ## Step 6: Get Postman
 Postman is a popular collaboration platform for API development and testing. Please download and install Postman from the official Postman website. This tool will assist you in testing and documenting APIs.
 
-## Step 7: Test your setup
-To ensure that all the tools are installed correctly, please verify that you can open your chosen IDE, run Java programs using Java 17, and launch Docker, DBeaver, and Postman without any issues.
+## Step 7: Install Git
+Git is a distributed version control system widely used for source code management. Please install Git on your machine by following the instructions provided on the official Git website.
+
+## Step 8: Test your setup
+To ensure that all the tools are installed correctly, please verify the following:
+- Open your chosen IDE and confirm Java 17 is set as the default JDK.
+- Open a terminal or command prompt and run the following commands:
+  - `java --version` (Ensure it displays the installed Java version, i.e., Java 17)
+  - `git --version` (Ensure it displays the installed Git version)
+  - `mvn --version` (Ensure it displays the installed Maven version)
+- Launch Docker, DBeaver, and Postman without any issues.
 
 ## Additional Resources
 Feel free to explore the following resources to familiarize yourself with the tools and technologies we use:
@@ -38,6 +47,7 @@ Feel free to explore the following resources to familiarize yourself with the to
 - Maven Documentation: [https://maven.apache.org/guides/index.html](https://maven.apache.org/guides/index.html)
 - DBeaver Documentation: [https://dbeaver.io/docs/](https://dbeaver.io/docs/)
 - Postman Documentation: [https://learning.postman.com/docs/](https://learning.postman.com/docs/)
+- Git Documentation: [https://git-scm.com/doc](https://git-scm.com/doc)
 
 If you have any questions or need assistance with the setup, don't hesitate to reach out to your team or the IT department.
 
