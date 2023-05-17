@@ -33,7 +33,7 @@ Docker is a tool designed to make it easier to create, deploy, and run applicati
 You can run a PostgreSQL instance using Docker by executing the following command in your terminal:
 
 ```bash
-docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
 ```
 
 This command will start a new Docker container named some-postgres, with the environment variable POSTGRES_PASSWORD set to mysecretpassword. The -d flag tells Docker to run the container in the background.
