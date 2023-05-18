@@ -20,6 +20,15 @@ Here are some basic SQL statements:
 - `ALTER TABLE`: used to modify an existing table
 - `DROP TABLE`: used to delete a table
 
+## SQL Sublanguages
+
+We can organize the various SQL commands into sublanguages. 
+
+- `DDL - Data Definition Language`: used to define a database schema (i.e.: create, alter, drop)
+- `DQL - Data Query Language`: used to query a database (i.e.: select)
+- `DML - Data Manipulation Language`: used to manipulate data that is present in the database (i.e.: insert, update, delete)
+- `TCL - Transaction Control Language`: used to control the execution of transactions. A transaction is a set of commands grouped and executed as a single unit (i.e.: commit, rollback)
+
 ## PostgreSQL
 
 PostgreSQL is an open-source relational database management system (RDBMS) that implements the SQL standard and offers many advanced features.
