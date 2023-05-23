@@ -1,11 +1,5 @@
 # Log4j Configuration Guide
 
-Created by: Jean Duong
-Created time: May 22, 2023 9:05 PM
-Last edited by: Jean Duong
-Last edited time: May 22, 2023 9:19 PM
-Tags: Misc
-
 Log4j is a reliable, fast, and flexible logging framework (APIs) written in Java. To configure Log4j2, we typically use an XML, JSON, or YAML file. In this guide, we'll use XML.
 
 ## **Directory Structure**
