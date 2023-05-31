@@ -8,6 +8,8 @@
 - [Stateless](#stateless)
 - [Stateful vs Stateless](#stateful-vs-stateless)
 
+## Introduction
+
 Representational State Transfer (REST) is a type of software design that helps create web services. It's lightweight, easy to maintain and scale.
 
 Web services are software systems that allow machines to talk to each other over a network, and is also commonly referred to as an API.
