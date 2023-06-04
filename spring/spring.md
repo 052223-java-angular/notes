@@ -1,5 +1,14 @@
 # Introduction to Spring Boot
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Spring Boot Basics](#spring-boot-basics)
+- [Spring Boot Annotations](#spring-boot-annotations)
+- [Spring Boot Data Access](#spring-boot-data-access)
+- [Spring Boot Web Development](#spring-boot-web-development)
+
+
 ## **Introduction**
 
 Spring Boot is a great tool for building Java applications easily and efficiently. It simplifies the process of creating strong and scalable applications by following a "convention over configuration" approach. With Spring Boot, developers can create ready-to-use, high-quality applications quickly.
@@ -459,7 +468,7 @@ The **`@RequestMapping`** annotation maps a URL pattern to a method or class, an
 @RestController
 @RequestMapping("/products")
 public class ProductController {
-		// Some code...
+	// Some code...
 }
 ```
 
@@ -478,9 +487,9 @@ public class UserController {
         User user = userService.getUserById(id);
 
         if (user != null) {
-            return ResponseEntity.ok(user);
+		return ResponseEntity.ok(user);
         } else {
-						throw new UserNotFoundException("User not found!");
+		throw new UserNotFoundException("User not found!");
         }
     }
 
@@ -488,11 +497,10 @@ public class UserController {
     public ResponseEntity<User> createUser(@RequestBody NewUserRequest req) {
         // Save the user to the database
         User savedUser = userService.createUser(req);
-
-				return ResponseEntity.status(HttpStatus.CREATED).build();
+	return ResponseEntity.status(HttpStatus.CREATED).build();
     }
-
-		// Handle exceptions...
+    
+    // Handle exceptions...
 }
 ```
 
@@ -532,10 +540,10 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(ResourceNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Map<String, Object>> handleResourceNotFoundException(ResourceNotFoundException ex) {
-				Map<String, Object> map = new HashMap<>();
-				map.put("timestamp", new Date(System.Curent...));
-				map.put("message", e.getMessage());
-				return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(map);
+    	Map<String, Object> map = new HashMap<>();
+	map.put("timestamp", new Date(System.Curent...));
+	map.put("message", e.getMessage());
+	return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(map);
     }
 }
 ```
