@@ -58,7 +58,7 @@ The IOC container is a tool in Spring Boot that handles objects and their depend
 
 In Spring Boot, a bean is an object that is taken care of by the Spring IoC (Inversion of Control) container. The container creates and sets up the beans, puts in the things they need, and makes sure they're doing what they're supposed to be doing. Beans are set up using Java annotations or XML configuration files.
 
-By default, Spring beans are created as single instances (singleton). This means that the Spring IoC container creates only one instance of a bean and shares it among multiple parts of the application that need it. If you need to create multiple instances of a bean, you can use the `**@Scope**` annotation to change the bean's scope to prototype.
+By default, Spring beans are created as single instances (singleton). This means that the Spring IoC container creates only one instance of a bean and shares it among multiple parts of the application that need it. If you need to create multiple instances of a bean, you can use the **`@Scope`** annotation to change the bean's scope to prototype.
 
 - A bean is an object in Spring Boot that is managed by the Spring IoC container.
 - The container takes care of creating and setting up the beans.
@@ -94,7 +94,7 @@ public class UserService {
 }
 ```
 
-In this example, the `**UserRepository**` is given to the `**UserService**` when the latter is created. Spring Boot creates only one object for each bean by default, so if multiple beans depend on the same object, they will all receive the same instance.
+In this example, the **`UserRepository`** is given to the **`UserService`** when the latter is created. Spring Boot creates only one object for each bean by default, so if multiple beans depend on the same object, they will all receive the same instance.
 
 The Spring IoC container provides many features for managing beans, including autowiring, bean scopes, and lifecycle callbacks. Understanding these features is essential for building robust and scalable applications with Spring Boot.
 
@@ -271,7 +271,7 @@ public class User {
 }
 ```
 
-- The `**User**` class represents a table in a database.
+- The **`User`** class represents a table in a database.
 - The **`@Entity`** annotation indicates that a class represents an entity in a database.
 - The **`@Id`** annotation indicates that the **`id`** field is the primary key.
 
@@ -284,10 +284,10 @@ public interface UserRepository extends JpaRepository<User, String> {
 }
 ```
 
-- A repository is created to manage the `**User**` entity, allowing common database operations like creating, reading, updating, and deleting records.
-- `**JpaRepository**` is used, which extends `**CrudRepository**` and provides more advanced querying features.
-- The `**User**` entity is specified as the target of the repository, along with the type of the primary key (`**String**`).
-- Spring Data JPA generates the necessary methods to interact with the `**User**` table.
+- A repository is created to manage the **`User`** entity, allowing common database operations like creating, reading, updating, and deleting records.
+- **`JpaRepository`** is used, which extends **`CrudRepository`** and provides more advanced querying features.
+- The **`User`** entity is specified as the target of the repository, along with the type of the primary key (**`String`**).
+- Spring Data JPA generates the necessary methods to interact with the **`User`** table.
 
 1. Inject the repository into your service or controller using **`@Autowired`**.
 
